@@ -1,44 +1,43 @@
 
-# Binance Proxy Backend
+# CryptoBot Mobile APK
 
-Backend Node.js + Express para proxy seguro da Binance API.
+Projeto mobile baseado em React + Capacitor para transformar o sistema CryptoBot em APK Android.
 
-## Recursos
-- Proxy autenticado Binance
-- Suporte Testnet e Live
-- CORS habilitado
-- Segurança API Keys
-- Endpoint Ping
-- Proxy GET e POST
-- Compatível com CryptoBot Mobile
+## Tecnologias
+- React
+- Capacitor
+- Ionic
+- Binance API
+- WebSocket Binance
 
 ## Instalação
 
 ```bash
 npm install
+npm install @capacitor/core @capacitor/cli
+npm install @capacitor/android
 ```
 
-## Executar
+## Inicializar Capacitor
 
 ```bash
-npm run dev
+npx cap init
+npx cap add android
 ```
 
-## Railway Deploy
+## Build
 
 ```bash
-npm install -g @railway/cli
-railway login
-railway init
-railway up
+npm run build
+npx cap copy
+npx cap open android
 ```
 
-## Endpoints
-
-### Ping
-GET /ping
-
-### Proxy Binance
-GET /proxy/*
-POST /proxy/*
+## Recursos inclusos
+- Login
+- Trading Bot
+- Binance WebSocket
+- Painel Admin
+- Sistema Multiusuário
+- Estrutura APK
 
